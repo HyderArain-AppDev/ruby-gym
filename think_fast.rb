@@ -33,3 +33,41 @@ p some_random_input
 
 # Write your code below
 
+
+the_class = some_random_input.class.to_s
+
+if the_class == "String"
+  p some_random_input.downcase
+elsif the_class == "Time"
+  if some_random_input.monday? == true
+    p "monday"
+  elsif some_random_input.tuesday? == true
+    p "tuesday"
+  elsif some_random_input.wedensday? == true
+    p "wednesday"
+  elsif some_random_input.thursday? == true
+    p "thursday"
+  elsif some_random_input.friday? == true
+    p "friday"
+  elsif some_random_input.saturday? == true
+    p "saturday"
+  else
+    p "sunday"
+  end
+elsif the_class == "Integer"
+  if some_random_input.odd? == true
+    p some_random_input.to_s + " is odd"
+  else
+    p some_random_input.to_s + " is even"
+  end
+elsif the_class == "Symbol"
+  p some_random_input.downcase
+elsif the_class == "NilClass"
+  p "no object provided"
+elsif the_class == "TrueClass"
+  p "you may pass"
+elsif the_class == "FalseClass"
+  p "you may not pass"
+elsif the_class == "Hash"
+  p some_random_input.keys
+end
