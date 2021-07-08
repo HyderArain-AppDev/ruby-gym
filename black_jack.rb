@@ -12,12 +12,15 @@ num_ar = gets.chomp.split(" ")
 num1 = num_ar[0].to_i 
 num2 = num_ar[1].to_i
 
-if num1 == 11 && num2 == 11
-    num1 = 1
-elsif num1 == 11
-    num1 = 1
-elsif num2 == 11
-    num2 = 1
+sum = num1 + num2
+if sum > 21
+    if num1 == 11 && num2 == 11
+        num1 = 1
+    elsif num1 == 11
+        num1 = 1
+    elsif num2 == 11
+        num2 = 1
+    end
 end
 
 sum = num1 + num2

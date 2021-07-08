@@ -7,3 +7,11 @@
 
 
 p "Enter in the secret you want to decode"
+secret = gets.chomp
+    enc1 = secret.gsub("1", "a")
+    enc2 = enc1.gsub("2", "e")
+    enc3 = enc2.gsub("3", "i")
+    enc4 = enc3.gsub("4", "o")
+    enc5 = enc4.gsub("5", "u")
+decoded = enc5
+p decoded
